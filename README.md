@@ -6,7 +6,13 @@ This repository contains a link to the dataset and instructions to download the 
 Information about the dataset: We use geotags to partition images based on their country of origin. For the label space, we consider the 4K categories from ImageNet-5K not present in ILSVRC12. These categories are selected in order to eliminate biased prior knowledge from pre-training on ILSVRC12. For each of the 4K labels, we select the corresponding images from YFCC100M based on a simple keyword-filtering of image tags. This provides us 1261 categories with at least 1 image present, and each category is present in at least 5 countries. We group images by their country of origin and only retain countries that have at least 10K images. For any domain with more than 20K images, we randomly sub-sample to limit it to 20K images. Therefore, each domain (i.e., country) has anywhere between 10K-20K images, giving us a total of 1,147,059 images from 1,261 categories across 62 countries (domains), and each image is associated with a class label and country
 (domain). We randomly partition the data in to 45 training, 7 validation and 15 test domains (by country). For each domain, we sample 3K points to create a per-domain test set and use the remaining points for training and validation.
 
-The metadata file is available at [this Google Drive link](https://drive.google.com/file/d/1HvpAeEc37R9nLcI79iSeVCX2PYg3AgXZ/view?usp=sharing). To download this via CLI, we suggest using [gdown](https://pypi.org/project/gdown/). The file is tar-zipped and unzipped results in a `pickle` file that stores a `pandas` dataframe, described below.
+The metadata file is available at [this Google Drive link](https://drive.google.com/file/d/1HvpAeEc37R9nLcI79iSeVCX2PYg3AgXZ/view?usp=sharing). To download this via CLI, we suggest using [gdown](https://pypi.org/project/gdown/). 
+```
+pip install gdown
+gdown http://drive.google.com/uc?id=1HvpAeEc37R9nLcI79iSeVCX2PYg3AgXZ
+md5sum GeoYFCC.tar.gz
+```
+The md5sum for the correctly downloaded file should match `db7419355b1e9827a2cf8f480ee36120`. The file is tar-zipped and unzipped results in a `pickle` file that stores a `pandas` dataframe, described below.
 
 | Column | Description |
 | ----------- | ----------- |
