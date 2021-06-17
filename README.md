@@ -10,9 +10,9 @@ The metadata file is available at [this Google Drive link](https://drive.google.
 ```
 pip install gdown
 gdown http://drive.google.com/uc?id=1HvpAeEc37R9nLcI79iSeVCX2PYg3AgXZ
-md5sum GeoYFCC.tar.gz
+echo "db7419355b1e9827a2cf8f480ee36120  GeoYFCC.tar.gz" | md5sum -c -
 ```
-The md5sum for the correctly downloaded file should match `db7419355b1e9827a2cf8f480ee36120`. The file is tar-zipped and unzipped results in a `pickle` file that stores a `pandas` dataframe, described below.
+The file is downloaded correctly if the above code ends with `OK`. The md5sum for the correctly downloaded file should match `db7419355b1e9827a2cf8f480ee36120`. The file is tar-zipped and unzipped results in a `pickle` file that stores a `pandas` dataframe, described below.
 
 | Column | Description |
 | ----------- | ----------- |
