@@ -1,4 +1,5 @@
 # Geographically Split YFCC for Domain Generalization (Geo-YFCC)
+![Samples from GeoYFCC](header.png "Samples from GeoYFCC")
 
 This repository contains a link to the dataset and instructions to download the Geo-YFCC dataset presented in the paper "[Adaptive Methods for Real-World Domain Generalization](https://arxiv.org/pdf/2103.15796.pdf)", appearing at CVPR 2021. This dataset contains a subset of the popular [YFCC100M dataset ](http://projects.dfki.uni-kl.de/yfcc100m/), that are partitioned based on the images' country of origin. Note that in order to limit the hosting space required, the dataset available here only contains the metadata and domain assignments, and *not* the original images. To obtain the original images, we urge the user to download them directly via the YFCC100M link (or use [this API](https://pypi.org/project/yfcc100m/)). 
 
