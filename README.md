@@ -16,7 +16,7 @@ The file is downloaded correctly if the above code ends with `OK`. The md5sum fo
 
 | Column | Description |
 | ----------- | ----------- |
-| `yfcc_row_id` | Corresponding row within YFCC100M (present in the `yfcc100m_dataset` file from YFCC100M) |
+| `yfcc_row_id` | Corresponding row ID within YFCC100M (present in the first column of the `yfcc100m_dataset` file from YFCC100M) |
 | `label_ids` | Labels, since this dataset is multi-label this is a list |
 | `country` | Plaintext name of domain (country) |
 | `country_id`| Serialization of domain (`country`) from 0-61 |
