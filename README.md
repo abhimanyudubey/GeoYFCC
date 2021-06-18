@@ -24,7 +24,7 @@ The file is downloaded correctly if the above code ends with `OK`. The md5sum fo
 | `is_train` | Boolean specifying whether row is in the training image split |
 | `yfcc_metadata` | Copy of the original YFCC metadata for image |
 
-The default domain splits are `0-43` as training, `44-50` as validation domains, and `51-61` as test domains. Each domain is further split into a `train` and `test` split which is specified in the `is_train` field.
+The default domain splits are `0-39` as training, `40-46` as validation domains, and `47-61` as test domains. Each domain is further split into a `train` and `test` split which is specified in the `is_train` field.
 
 If you find this dataset relevant to your research, please consider citing our work below.
 ```
