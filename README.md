@@ -20,7 +20,7 @@ The file is downloaded correctly if the above code ends with `OK`. The md5sum fo
 | `label_ids` | Labels, since this dataset is multi-label this is a list |
 | `country` | Plaintext name of domain (country) |
 | `country_id`| Serialization of domain (`country`) from 0-61 |
-| `in_5k_label_ids` | Corresponding labels in the ImageNet-5K dataset |
+| `in_5k_label_ids` | Corresponding labels in the ImageNet-5K dataset (Use the `in5k_map.json` file to map these IDs to synset IDs) |
 | `is_train` | Boolean specifying whether row is in the training image split |
 | `yfcc_metadata` | Copy of the original YFCC metadata for image |
 
